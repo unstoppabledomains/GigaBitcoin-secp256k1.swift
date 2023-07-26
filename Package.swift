@@ -17,13 +17,13 @@ let dependencies: [Package.Dependency]
 #endif
 
 let package = Package(
-    name: "secp256k1",
+    name: "GigaBitcoin-secp256k1",
     products: [
         // WARNING: These APIs should not be considered stable and may change at any time.
         .library(
-            name: "secp256k1",
+            name: "GigaBitcoin-secp256k1",
             targets: [
-                "secp256k1"
+                "GigaBitcoin-secp256k1"
             ]
         ),
         .library(
@@ -36,7 +36,7 @@ let package = Package(
     dependencies: dependencies,
     targets: [
         .target(
-            name: "secp256k1",
+            name: "GigaBitcoin-secp256k1",
             dependencies: [
                 "secp256k1_bindings"
             ]
