@@ -2,19 +2,7 @@
 
 import PackageDescription
 
-let dependencies: [Package.Dependency]
-
-#if os(macOS)
-    dependencies = [
-        // Dependencies used for package development
-        .package(url: "https://github.com/csjones/lefthook.git", branch: "swift"),
-        .package(url: "https://github.com/nicklockwood/SwiftFormat.git", from: "0.49.5"),
-        .package(url: "https://github.com/realm/SwiftLint.git", exact: "0.46.5"),
-        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0")
-    ]
-#else
-    dependencies = []
-#endif
+let dependencies: [Package.Dependency] = []
 
 let package = Package(
     name: "GigaBitcoin-secp256k1",
