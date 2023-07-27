@@ -20,11 +20,11 @@ let package = Package(
         .target(
             name: "GigaBitcoin-secp256k1",
             dependencies: [
-                "secp256k1_bindings"
+                "GigaBitcoin-secp256k1_bindings"
             ]
         ),
         .target(
-            name: "secp256k1_bindings",
+            name: "GigaBitcoin-secp256k1_bindings",
             cSettings: [
                 // Basic config values that are universal and require no dependencies.
                 .define("ECMULT_GEN_PREC_BITS", to: "4"),
